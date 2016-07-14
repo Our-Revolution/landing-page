@@ -4,7 +4,7 @@
   "private": true,
   "description": "Landing page with mailing signup for Our Revolution.",
   "scripts": {
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
@@ -23,7 +23,6 @@
     "gulp-livereload": "^3.8.0",
     "gulp-plumber": "^1.0.0"
   },
-  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Our-Revolution/landing-page.git"
