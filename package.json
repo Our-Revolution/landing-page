@@ -10,6 +10,7 @@
     "express-handlebars": "^3.0.0",
     "generator-express": "^2.12.2",
     "morgan": "^1.7.0",
+    "pg": "^6.0.2",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
