@@ -1,0 +1,148 @@
+@import 'colors';
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-height: 600px;
+  background-color: $blue;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* General */
+html {
+  font-size: 62.5%;
+  // 62.5% so we can use rem values that are similar to pixel values, i.e. 2.4rem = 24px
+  height: 100%;
+}
+
+.btn {
+  border-radius: 4px;
+
+  &.btn-primary {
+    background: $green;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    padding: 15px;
+
+    &:hover {
+      background: darken($green, 5);
+    }
+
+    &:active, &:focus {
+      background: darken($green, 10);
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+/* Hero */
+
+section.hero {
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  form.signup {
+    padding-top: 4rem;
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+
+    .email input {
+      width: 45%;
+    }
+
+    .zip input {
+      width: 28%;
+      margin-left: 2%;
+    }
+
+    .submit {
+      width: 20%;
+      float: right;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      color: $darkgray;
+      padding: 15px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+  }
+}
+/* Footer */
+footer {
+ color: white;
+ position: absolute;
+ bottom: 20px;
+ left: 0;
+ right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  form.signup input, form.signup button, form.signup .inputgroup {
+    display: block;
+    width: 100% !important;
+    margin: 0 0 15px !important;
+    box-sizing: border-box;
+  }
+}
