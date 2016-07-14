@@ -17,7 +17,7 @@ gulp.task('watch', function() {
 gulp.task('develop', function () {
   livereload.listen();
   nodemon({
-    script: 'bin/www',
+    script: 'app.js',
     ext: 'js handlebars coffee',
     stdout: false
   }).on('readable', function () {

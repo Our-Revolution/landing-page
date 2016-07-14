@@ -2,8 +2,9 @@
   "name": "landing-page",
   "version": "1.0.0",
   "private": true,
+  "description": "Landing page with mailing signup for Our Revolution.",
   "scripts": {
-    "start": "nf start"
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
@@ -28,10 +29,8 @@
     "url": "git+https://github.com/Our-Revolution/landing-page.git"
   },
   "author": "Chris Mabry",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Our-Revolution/landing-page/issues"
   },
-  "homepage": "https://github.com/Our-Revolution/landing-page#readme",
-  "description": ""
+  "homepage": "http://ourrevolution.com,
 }
