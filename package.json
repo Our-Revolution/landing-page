@@ -4,6 +4,7 @@
   "description": "Landing page with mailing signup for Our Revolution.",
   "main": "./bin/www",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
