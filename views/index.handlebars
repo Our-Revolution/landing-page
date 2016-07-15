@@ -7,16 +7,21 @@
 
           <form class="signup" action="/" method="post" enctype="application/x-www-form-urlencoded">
             <span class="inputgroup email">
-              <input id="email" name="email" size="48" type="email" placeholder="Email Address"/>
+              <input id="email" name="email" type="email" placeholder="Email Address" value="{{email}}" required/>
             </span>
 
             <span class="inputgroup zip">
-              <input id="zip" name="zip" size="8" type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="Zip Code"/>
+              <input id="zip" name="zip" type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="Zip Code" value="{{zip}}" required/>
             </span>
 
             <span class="inputgroup submit">
               <button name="submit" type="submit" id="submit" class="btn btn-primary" value='submit'>Join the Fight</button>
             </span>
+
+            {{#if error}}
+              <br/><br/>
+              <div class="alert alert-danger" role="alert">{{error}}</div>
+            {{/if}}
           </form>
         </div>
       </div>

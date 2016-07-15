@@ -13,9 +13,25 @@ res.render('index', {
 
 router.post('/', function(req, res) {
   console.log(req.body);
-  res.render('success', {
+  var email = req.body.email;
+
+  var error = null;
+  if (!req.body.email)
+  	error = 'Please provide an email address.';
+  else if (!req.body.zip)
+  	error = 'Please provide a zip code.';
+  else {
+    return res.render('success', {
+    	title: 'Our Revolution',
+    	email: req.body.email
+    });
+  }
+
+  res.render('index', {
   	title: 'Our Revolution',
-  	email: req.body.email
+  	email: req.body.email,
+  	zip: req.body.zip,
+  	error: error
   });
 });
 
