@@ -12,7 +12,7 @@ res.render('index', {
 });
 
 router.post('/', function(req, res) {
-  console.log(res.body);
+  console.log(req.body);
   res.render('index', { title: 'Our Revolution' });
 });
 
