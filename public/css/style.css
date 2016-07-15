@@ -51,6 +51,9 @@ h2 {
   font-weight: 500;
   font-size: 2.8rem; }
 
+@media (max-width: 767px) {
+  body {
+    min-height: 420px; } }
 /* Hero */
 section.hero h1 {
   margin-top: 0; }
