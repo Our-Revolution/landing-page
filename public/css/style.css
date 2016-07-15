@@ -57,6 +57,10 @@ section.hero .headline {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+@media (max-width: 767px) {
+  section.hero .signup-container {
+    width: 100%;
+    max-width: 500px; } }
 section.hero form.signup {
   padding-top: 4rem;
   max-width: 700px;
