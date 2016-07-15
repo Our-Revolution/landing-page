@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
-var pg = require('pg');
 var routes = require('./routes/index');
 
 var app = express();
@@ -13,18 +12,6 @@ var app = express();
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
-
-pg.defaults.ssl = false;
-pg.connect(process.env.DATABASE_URL, function(err, client) {
-  if (err) throw err;
-  console.log('Connected to postgres! Getting schemas...');
-
-  client
-    .query('SELECT * FROM subscribers')
-    .on('row', function(row) {
-      console.log(JSON.stringify(row));
-    });
-});
 
 // view engine setup
 
