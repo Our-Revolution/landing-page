@@ -60,6 +60,9 @@ section.hero .headline {
   left: 50%;
   transform: translate(-50%, -50%); }
 @media (max-width: 767px) {
+  section.hero .headline {
+    top: 5%;
+    transform: translate(-50%, 0%); }
   section.hero .signup-container {
     width: 100%;
     max-width: 500px; } }

@@ -23,7 +23,7 @@ body {
   background-attachment: fixed;
   color: white;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* General */
@@ -82,6 +82,11 @@ section.hero {
   }
 
   @media (max-width: 767px) {
+    .headline {
+      top: 5%;
+      transform: translate(-50%, 0%);
+    }
+
     .signup-container {
       width: 100%;
       max-width: 500px;
