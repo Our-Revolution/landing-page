@@ -6,7 +6,7 @@ router.get('/', function(req, res) {
 res.render('index', {
     title: 'Our Revolution',
     description: 'Join us for the future of our political movement.',
-    url: 'ourrevolution.com',
+    url: 'https://ourrevolution.com',
     imagePath: 'https://ourrevolution.com/img/fb.png',
     type: 'website'
   });
@@ -40,12 +40,20 @@ var error = null;
 			title: 'Our Revolution',
 			email: req.body.email,
 			zip: req.body.zip,
-			error: error
+			error: error,
+      description: 'Join us for the future of our political movement.',
+      url: 'https://ourrevolution.com',
+      imagePath: 'https://ourrevolution.com/img/fb.png',
+      type: 'website'
 		});
   else
 		res.render('success', {
     	title: 'Our Revolution',
-    	email: req.body.email
+    	email: req.body.email,
+      description: 'Join us for the future of our political movement.',
+      url: 'https://ourrevolution.com',
+      imagePath: 'https://ourrevolution.com/img/fb.png',
+      type: 'website'
     });
 });
 
