@@ -13,7 +13,10 @@ res.render('index', {
 
 router.post('/', function(req, res) {
   console.log(req.body);
-  res.render('index', { title: 'Our Revolution' });
+  res.render('success', {
+  	title: 'Our Revolution',
+  	email: req.body.email
+  });
 });
 
 module.exports = router;
