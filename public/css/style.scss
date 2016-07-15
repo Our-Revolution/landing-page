@@ -26,6 +26,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: white;
+  font-weight: 700;
+
+  &:hover, &:focus {
+    color: white;
+  }
+}
+
 /* General */
 html {
   font-size: 62.5%;
@@ -164,6 +173,50 @@ footer {
  bottom: 20px;
  left: 0;
  right: 0;
+}
+
+/* Privacy Policy */
+a.banner {
+  position: absolute;
+  left: 0;
+  right:0;
+  background: lighten($blue,10);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    background: lighten($blue, 20);
+    text-decoration: none;
+  }
+
+  &:focus {
+    background: lighten($blue, 25);
+    text-decoration: none;
+  }
+}
+
+section.privacy-policy {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  a {
+    color: white;
+    font-weight: 700;
+
+    &:hover, &:focus {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
 }
 
 @media screen and (max-width: 767px) {

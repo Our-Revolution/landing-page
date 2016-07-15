@@ -57,4 +57,14 @@ var error = null;
     });
 });
 
+router.get('/privacy-policy', function(req, res) {
+res.render('privacy-policy', {
+    title: 'Our Revolution',
+    description: 'Join us for the future of our political movement.',
+    url: 'https://ourrevolution.com',
+    imagePath: 'https://ourrevolution.com/img/fb.png',
+    type: 'website'
+  });
+});
+
 module.exports = router;

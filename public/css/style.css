@@ -22,6 +22,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+a {
+  color: white;
+  font-weight: 700; }
+  a:hover, a:focus {
+    color: white; }
+
 /* General */
 html {
   font-size: 62.5%;
@@ -123,6 +129,37 @@ footer {
   bottom: 20px;
   left: 0;
   right: 0; }
+
+/* Privacy Policy */
+a.banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #0082ed;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.25s; }
+  a.banner:hover {
+    background: #219bff;
+    text-decoration: none; }
+  a.banner:focus {
+    background: #3ba6ff;
+    text-decoration: none; }
+
+section.privacy-policy {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  section.privacy-policy a {
+    color: white;
+    font-weight: 700; }
+    section.privacy-policy a:hover, section.privacy-policy a:focus {
+      color: white;
+      text-decoration: underline; }
+  section.privacy-policy h1 {
+    font-size: 5rem; }
 
 @media screen and (max-width: 767px) {
   h1 {
