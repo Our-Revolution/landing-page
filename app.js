@@ -6,15 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var routes = require('./routes/index');
-
+var rollbar = require("rollbar");
 var app = express();
 
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
 
-// view engine setup
+// rollbar
+rollbar.init("9bae03f5da4b453db54dbaf915ebf26d");
+app.use(rollbar.errorHandler('9bae03f5da4b453db54dbaf915ebf26d'));
 
+// view engine setup
 app.engine('handlebars', exphbs({
   defaultLayout: 'main',
   partialsDir: ['views/partials/']
