@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
-
 var routes = require('./routes/index');
 
 var app = express();
@@ -52,7 +51,7 @@ if (app.get('env') === 'development') {
         res.render('error', {
             message: err.message,
             error: err,
-            title: 'error'
+            title: 'Error'
         });
     });
 }
@@ -64,7 +63,7 @@ app.use(function(err, req, res, next) {
     res.render('error', {
         message: err.message,
         error: {},
-        title: 'error'
+        title: 'Error'
     });
 });
 

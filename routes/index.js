@@ -13,15 +13,19 @@ res.render('index', {
 
 router.post('/', function(req, res) {
   console.log(req.body);
-  
+  var email = req.body.email;
+
   var error = null;
   if (!req.body.email)
-  	error = 'Please provide an email address.'
+  	error = 'Please provide an email address.';
   else if (!req.body.zip)
-  	error = 'Please provide a zip code.'
+  	error = 'Please provide a zip code.';
   else {
-  	// render success page
-  	// return
+    // write to DB
+    return res.render('success', {
+    	title: 'Our Revolution',
+    	email: req.body.email
+    });
   }
 
   res.render('index', {
