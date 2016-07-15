@@ -7,11 +7,11 @@
 
           <form class="signup" action="/" method="post" enctype="application/x-www-form-urlencoded">
             <span class="inputgroup email">
-              <input id="email" name="email" size="48" type="email" placeholder="Email Address" value="{{email}}"/>
+              <input id="email" name="email" type="email" placeholder="Email Address" value="{{email}}" required/>
             </span>
 
             <span class="inputgroup zip">
-              <input id="zip" name="zip" size="8" type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="Zip Code" value="{{zip}}"/>
+              <input id="zip" name="zip" type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="Zip Code" value="{{zip}}" required/>
             </span>
 
             <span class="inputgroup submit">
