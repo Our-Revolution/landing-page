@@ -21,6 +21,7 @@ router.post('/', function(req, res) {
   else if (!req.body.zip)
   	error = 'Please provide a zip code.';
   else {
+    // write to DB
     return res.render('success', {
     	title: 'Our Revolution',
     	email: req.body.email
