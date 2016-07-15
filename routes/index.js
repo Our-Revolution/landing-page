@@ -12,8 +12,12 @@ res.render('index', {
 });
 
 router.post('/', function(req, res) {
-  console.log(res.body);
-  res.render('index', { title: 'Our Revolution' });
+  console.log(req.body);
+
+  res.render('success', {
+  	title: 'Our Revolution',
+  	email: req.body.email
+  });
 });
 
 module.exports = router;
