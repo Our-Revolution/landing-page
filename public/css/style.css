@@ -18,7 +18,9 @@ body {
   background-position: right top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white; }
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /* General */
 html {
@@ -61,11 +63,22 @@ section.hero form.signup {
   padding-top: 4rem;
   max-width: 700px;
   margin: auto;
-  width: 100%; }
+  width: 100%;
+  text-align: left;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */ }
+  section.hero form.signup .alert {
+    margin-top: 15px;
+    text-align: center;
+    background: #f55b5b;
+    border: 0;
+    color: white;
+    font-weight: 700; }
   section.hero form.signup .email input {
     width: 45%; }
   section.hero form.signup .zip input {
-    width: 28%;
+    width: 29.5%;
     margin-left: 2%; }
   section.hero form.signup .submit {
     width: 20%;
@@ -78,6 +91,14 @@ section.hero form.signup {
     border-radius: 4px;
     color: #333;
     padding: 15px; }
+  section.hero form.signup input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  section.hero form.signup input:focus:-moz-placeholder {
+    color: transparent; }
+  section.hero form.signup input:focus::-moz-placeholder {
+    color: transparent; }
+  section.hero form.signup input:focus:-ms-input-placeholder {
+    color: transparent; }
   section.hero form.signup input[type=number]::-webkit-inner-spin-button,
   section.hero form.signup input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -85,6 +106,7 @@ section.hero form.signup {
     appearance: none;
     margin: 0; }
 
+/* Success */
 /* Footer */
 footer {
   color: white;
@@ -104,4 +126,5 @@ footer {
     display: block;
     width: 100% !important;
     margin: 0 0 15px !important;
-    box-sizing: border-box; } }
+    box-sizing: border-box;
+    float: none !important; } }
