@@ -12,8 +12,14 @@ res.render('index', {
 });
 
 router.post('/', function(req, res) {
-  console.log(res.body);
-  res.render('index', { title: 'Our Revolution' });
+  console.log(req.body);
+
+  res.render('index', {
+  	title: 'Our Revolution',
+  	email: req.body.email,
+  	zip: req.body.zip,
+  	error: 'There was an issue with your submission!!'
+  });
 });
 
 module.exports = router;
