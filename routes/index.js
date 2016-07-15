@@ -20,7 +20,7 @@ var error = null;
     else if (!req.body.zip)
       error = 'Please provide a zip code.';
     else {
-      pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+      pg.connect(process.env.POSTGRES_URL, function(err, client, done) {
         client.query('INSERT INTO subscribers(email, zip) values($1, $2)', [req.body.email, req.body.zip], function(err, result) {
           done();
           if (err) {
