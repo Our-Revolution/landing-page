@@ -13,12 +13,22 @@ res.render('index', {
 
 router.post('/', function(req, res) {
   console.log(req.body);
+  
+  var error = null;
+  if (!req.body.email)
+  	error = 'Please provide an email address.'
+  else if (!req.body.zip)
+  	error = 'Please provide a zip code.'
+  else {
+  	// render success page
+  	// return
+  }
 
   res.render('index', {
   	title: 'Our Revolution',
   	email: req.body.email,
   	zip: req.body.zip,
-  	error: 'There was an issue with your submission!!'
+  	error: error
   });
 });
 
