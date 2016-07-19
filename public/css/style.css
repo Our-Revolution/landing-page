@@ -161,6 +161,17 @@ section.privacy-policy {
   section.privacy-policy h1 {
     font-size: 5rem; }
 
+/* Error Pages*/
+div.error {
+  padding: 50px; }
+  div.error .message, div.error .status {
+    font-weight: 700; }
+  div.error .stack {
+    text-align: left;
+    white-space: pre-line; }
+  div.error .btn-back {
+    margin-top: 50px; }
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 4rem; }

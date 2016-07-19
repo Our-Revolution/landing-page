@@ -219,6 +219,24 @@ section.privacy-policy {
 
 }
 
+/* Error Pages*/
+div.error {
+  padding: 50px;
+
+  .message, .status {
+    font-weight: 700;
+  }
+
+  .stack {
+    text-align: left;
+    white-space: pre-line;
+  }
+
+  .btn-back {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 4rem;
