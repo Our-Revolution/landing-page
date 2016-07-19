@@ -28,6 +28,11 @@ a {
   a:hover, a:focus {
     color: white; }
 
+.hide-text, .social-buttons .facebook, .social-buttons .twitter {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
 /* General */
 html {
   font-size: 62.5%;
@@ -68,6 +73,10 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 2.8rem; }
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700; }
 
 @media (max-width: 767px) {
   body {
@@ -138,6 +147,32 @@ section.hero form.signup {
     -moz-appearance: none;
     appearance: none;
     margin: 0; }
+
+/* Success */
+.success-message {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.social-buttons {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto; }
+  .social-buttons .facebook {
+    background: url("../img/facebook.svg") center center no-repeat;
+    display: inline-block;
+    width: 40px; }
+    .social-buttons .facebook:hover {
+      opacity: 0.8; }
+  .social-buttons .twitter {
+    background: url("../img/twitter.svg") center center no-repeat;
+    display: inline-block;
+    width: 40px; }
+    .social-buttons .twitter:hover {
+      opacity: 0.8; }
 
 /* Footer */
 footer {
