@@ -63,6 +63,24 @@ html {
       box-shadow: none;
     }
   }
+
+  &.btn-secondary {
+    border-radius: 50px;
+    background: lighten($blue,10);
+    color: white;
+    padding: 10px 15px;
+    transition: 0.25s;
+
+    &:hover {
+      background: lighten($blue,15);
+    }
+
+    &:active, &:focus {
+      background: lighten($blue,20);
+      outline: 0;
+      box-shadow: none;
+    }
+  }
 }
 
 h1 {
@@ -77,8 +95,14 @@ h2 {
 
 @media (max-width: 767px) {
   body {
-    min-height: 420px;
+    min-height: 550px;
   }
+}
+
+.btn-contribute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /* Hero */
@@ -252,5 +276,16 @@ div.error {
     margin: 0 0 15px !important;
     box-sizing: border-box;
     float: none !important;
+  }
+
+  .btn-contribute {
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 !important;
+  }
+
+  .signup-container {
+    padding-top: 30px;
   }
 }
