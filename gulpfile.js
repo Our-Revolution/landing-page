@@ -2,10 +2,12 @@ var gulp = require('gulp'),
   nodemon = require('gulp-nodemon'),
   plumber = require('gulp-plumber'),
   livereload = require('gulp-livereload'),
-  sass = require('gulp-ruby-sass');
+  sass = require('gulp-ruby-sass'),
+  autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return sass('./public/css/**/*.scss')
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
 });
