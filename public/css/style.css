@@ -185,7 +185,7 @@ section.hero form.signup {
     margin: 0; }
   section.hero form.signup label {
     font-size: 1.4rem;
-    padding: 0 0 1rem; }
+    padding: 0 0 0.5rem; }
 
 /* Success */
 .success {
@@ -272,7 +272,7 @@ div.error {
     font-size: 2rem; }
 
   form.signup input, form.signup button, form.signup .inputgroup {
-    display: block;
+    display: block !important;
     width: 100% !important;
     margin: 0 0 1rem !important;
     box-sizing: border-box;

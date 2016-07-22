@@ -222,7 +222,7 @@ section.hero {
 
     label {
       font-size: 1.4rem;
-      padding: 0 0 1rem;
+      padding: 0 0 0.5rem;
     }
 
   }
@@ -350,7 +350,7 @@ div.error {
   }
 
   form.signup input, form.signup button, form.signup .inputgroup {
-    display: block;
+    display: block !important;
     width: 100% !important;
     margin: 0 0 1rem !important;
     box-sizing: border-box;
