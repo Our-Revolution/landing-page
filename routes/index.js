@@ -47,14 +47,7 @@ var error = null;
       type: 'website'
 		});
   else
-		res.render('success', {
-    	title: 'Our Revolution',
-    	email: req.body.email,
-      description: 'Join us for the future of our political movement.',
-      url: 'https://ourrevolution.com',
-      imagePath: 'https://ourrevolution.com/img/fb.png',
-      type: 'website'
-    });
+		res.redirect('https://secure.actblue.com/contribute/page/ourrevolution?refcode=ourrevolution_landing_success');
 });
 
 router.get('/privacy-policy', function(req, res) {
