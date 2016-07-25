@@ -4,7 +4,7 @@ var pg = require('pg');
 var cookieParser = require('cookie-parser');
 var ab = require('express-ab');
 
-var signupTest = ab.test('signup-donation-test', {cookie: false});
+var signupTest = ab.test('signup-donation-test');
 
 router.get('/', function(req, res) {
   res.render('index', {
