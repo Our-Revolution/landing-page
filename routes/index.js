@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 router.get('/', function(req, res) {
   res.render('index', {
     title: 'Our Revolution',
-    description: 'Join us for the future of our political movement.',
+    description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
     url: 'https://ourrevolution.com',
     imagePath: 'https://ourrevolution.com/img/fb.png',
     type: 'website'
@@ -42,7 +42,7 @@ router.post('/', function(req, res) {
   		email: req.body.email,
   		zip: req.body.zip,
   		error: error,
-      description: 'Join us for the future of our political movement.',
+      description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
       url: 'https://ourrevolution.com',
       imagePath: 'https://ourrevolution.com/img/fb.png',
       type: 'website'
@@ -54,7 +54,7 @@ router.post('/', function(req, res) {
 router.get('/privacy-policy', function(req, res) {
   res.render('privacy-policy', {
     title: 'Our Revolution',
-    description: 'Join us for the future of our political movement.',
+    description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
     url: 'https://ourrevolution.com',
     imagePath: 'https://ourrevolution.com/img/fb.png',
     type: 'website'
