@@ -61,4 +61,18 @@ router.get('/privacy-policy', function(req, res) {
   });
 });
 
+router.get('/jobs/graphic-designer', function(req, res) {
+  res.render('jobs/graphic-designer', {
+    title: 'Our Revolution',
+    description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
+    url: 'https://ourrevolution.com',
+    imagePath: 'https://ourrevolution.com/img/fb.png',
+    type: 'website'
+  });
+});
+
+router.get('/jobs', function(req, res) {
+  res.redirect('/jobs/graphic-designer');
+});
+
 module.exports = router;

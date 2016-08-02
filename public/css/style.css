@@ -253,6 +253,32 @@ section.privacy-policy {
   section.privacy-policy h1 {
     font-size: 5rem; }
 
+/* Job */
+.job {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 80px; }
+  .job h2 {
+    font-weight: bolder;
+    margin-top: 40px; }
+  .job .location {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal; }
+  .job .job-title {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .job .to-apply {
+    background: #20c261;
+    border-radius: 3px;
+    color: white;
+    padding: 20px;
+    display: block;
+    font-size: 18px;
+    text-align: center; }
+
 /* Error Pages*/
 div.error {
   padding: 50px; }
