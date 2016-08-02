@@ -63,9 +63,9 @@ router.get('/privacy-policy', function(req, res) {
 
 router.get('/jobs/graphic-designer', function(req, res) {
   res.render('jobs/graphic-designer', {
-    title: 'Our Revolution',
-    description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
-    url: 'https://ourrevolution.com',
+    title: 'Our Revolution Jobs - Graphic Designer',
+    description: "Our Revolution is looking for a creative graphic designer who wants to make art that changes the world. You will work on a variety of print and digital projects including but not limited to, banners, advertisements, social media graphics, web graphics, image-based HTML email designs, merchandising and photo editing.",
+    url: 'https://ourrevolution.com/jobs/graphic-designer',
     imagePath: 'https://ourrevolution.com/img/fb.png',
     type: 'website'
   });
