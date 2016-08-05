@@ -75,4 +75,8 @@ router.get('/jobs', function(req, res) {
   res.redirect('/jobs/graphic-designer');
 });
 
+router.get('/launch', function(req, res) {
+  res.redirect('https://organize.berniesanders.com/events/create#type=our-revolution-kickoff');
+});
+
 module.exports = router;
