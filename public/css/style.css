@@ -226,6 +226,7 @@ a.banner {
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
   background: #0082ed;
   color: white;
   font-weight: 700;
