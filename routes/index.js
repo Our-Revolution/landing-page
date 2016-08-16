@@ -69,6 +69,16 @@ router.get('/jobs', function(req, res) {
   res.redirect('/');
 });
 
+router.get('/live-chat-training', function(req, res) {
+  res.render('live-chat-training', {
+    title: 'Our Revolution',
+    description: "The next step for Bernie Sanders' movement is a new group called Our Revolution, which will fight to transform America and advance the progressive agenda that we believe in.",
+    url: 'https://ourrevolution.com',
+    imagePath: 'https://ourrevolution.com/img/fb.png',
+    type: 'website'
+  });
+});
+
 router.get('/launch', function(req, res) {
   res.redirect('https://organize.berniesanders.com/events/create#type=our-revolution-kickoff');
 });
